@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MovieHouse</title>
+    </head>
+    <body style="background-color: #272424;">
+        <div>
+            <table>
+                <tr>
+                    <td style="width: 100px; padding-right: 350px;">
+                        <a href="index.html"><img src="logo.png"></a>
+                    </td>
+                    <td >
+                        <a href="whatson.html" style="padding-right: 70px; font-size: 20px; text-decoration: none; color: white;">What's On</a>
+                        <a href="booknow.html" style="padding-right: 70px; font-size: 20px; text-decoration: none; color: white;">Book Now</a>
+                        <a href="location.html" style="padding-right: 70px; font-size: 20px; text-decoration: none; color: white;">Locations</a>
+                        <a href="login.html" style="padding-right: 70px; font-size: 20px; text-decoration: none; color: white;">Log In\Sign Up</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1 style="text-align:center; color: white; font-weight: lighter;">BOOK NOW!</h1>
+        </div>
+        <div>
+            <form>
+                <table style="padding-left: 300px;">
+                    <tr style="height: 100px;">
+                        <td style="width: 400px">
+                            <label style="font-size: 25px; color: white; font-weight: lighter; text-align: center;">Select Movie Title</label>
+                        </td>
+                        <td>
+                            <select style="width: 260px; height: 40px; background-color: #797975;">
+                                <option value="Black Panther 2: Wakanda Forever">Black Panther 2: Wakanda Forever</option>
+                                <option value="Black Adam">Black Adam</option>
+                                <option value="Avatar 2: The Way of Water">Avatar 2: The Way of Water</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr style="height: 100px;">
+                        <td>
+                            <label style="font-size: 25px; color: white; font-weight: lighter;">Select Showtime</label>
+                        </td>
+                        <td>
+                            <select style="width: 260px; height: 40px; background-color: #797975; text-align: center;">
+                                <option value="10:20am">10:20am</option>
+                                <option value="12pm">12pm</option>
+                                <option value="3pm">3pm</option>
+                                <option value="6:30pm">6:30pm</option>
+                                <option value="9pm">9pm</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr style="height: 100px;">
+                        <td>
+                            <label style="font-size: 25px; color: white; font-weight: lighter;">Number of Tickets</label>
+                        </td>
+                        <td>
+                            <select style="width: 260px; height: 40px; background-color: #797975; text-align: center;">
+
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <br><br><br><br>
+        <div>
+            <table style="padding-left: 270px">
+                <tr>
+                    <td style="width: 500px;">
+                        <label style="font-size: 25px; color: white; font-weight: lighter; text-align: center; margin-left: 50px;">Your Full Name</label><br><br><br>
+                        <input type="text" name="fullname" placeholder="Enter your full name " style="height: 40px; width: 260px; background-color: #797975; text-align: center; color: black;">
+                    </td>
+                    <td>
+                        <label style="font-size: 25px; color: white; font-weight: lighter; text-align: center; margin-left: 50px;">Your Email</label><br><br><br>
+                        <input type="email" name="email" placeholder="Enter your email address" style="height: 40px; width: 260px; background-color: #797975; text-align: center; color: black;">
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <button type="button" onclick="alert('Your Reservation has been made successfully and a confirmation email has been sent to the address provided.')" style="margin-left: 550px; background-color: #797975; width:200px ; height: 50px; font-size: 15px;">Make a Reservation!</button>
+        </div>
+        
+    </body>
+</html>

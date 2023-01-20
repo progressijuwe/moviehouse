@@ -1,0 +1,10 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.text {
+    position: absolute;
+    top: 160px;
+    left: 16px;
+}
