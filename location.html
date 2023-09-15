@@ -1,45 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>MovieHouse</title>
-    </head>
-    <body style="background-color: #272424;">
-        <div>
-            <table>
-                <tr>
-                    <td style="width: 100px; padding-right: 350px;">
-                        <a href="index.html"><img src="logo.png"></a>
-                    </td>
-                    <td >
-                        <a href="whatson.html" style="padding-right: 70px; font-size: 20px; text-decoration: none; color: white;">What's On</a>
-                        <a href="booknow.html" style="padding-right: 70px; font-size: 20px; text-decoration: none; color: white;">Book Now</a>
-                        <a href="location.html" style="padding-right: 70px; font-size: 20px; text-decoration: none; color: white;">Locations</a>
-                        <a href="login.html" style="padding-right: 70px; font-size: 20px; text-decoration: none; color: white;">Log In\Sign Up</a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <br><br>
-        <div>
-            <h1 style="text-align:center; color: white; font-weight: lighter;">WHERE TO FIND US</h1>
-            <img src="location.png" style="margin-left: 570px; width: 100px; height: 100px"><br>
-            <p style="margin-left: 420px; color: white;">NOVARE LEKKI MALL, SANGOTEDO, ETI-OSA, LAGOS</p>
-            <br><br>
-            <table>
-                <tr>
-                    <td style="width: 700px;">
-                        <img src="location.png" style=" width: 100px; height: 100px; margin-left: 250px;"><br>
-                        <p style="text-align: center; color: white;">GARDEN CITY MALL, RUMUOMASI, PORT HARCOURT</p>
-                    </td>
-                    <td style="width: 700px;">
-                        <img src="location.png" style=" width: 100px; height: 100px; margin-left: 250px"><br>
-                        <p style="text-align: center; color: white;">JABI LAKE MALL, BALA SOKOTO WAY, JABI, ABUJA</p>
-                    </td>
-                </tr>
-            </table>
-            <br><br>
-            <h1 style="color: white; margin-left: 70px; font-size: 50px;">Contact Us</h1>
-            <p style="color: white; margin-left: 60px ;">You can email us at the address at helpdesk@moviehouse.com<br><br> Or you can call us at +234 905 678 2134.</p>
-        </div>
-    </body>
+<head>
+    <title>MovieHouse</title>
+    <style>
+        body {
+            background-color: #272424;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            margin: 0;
+        }
+
+        .navbar {
+            padding: 10px 50px;
+            background-color: #272424;
+        }
+
+        .navbar table {
+            width: 100%;
+        }
+
+        .navbar td {
+            padding-right: 70px;
+        }
+
+        .navbar img {
+            width: 100px;
+            height: auto;
+        }
+
+        .navbar a {
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .locations {
+            text-align: center;
+            margin-left: 70px;
+            font-size: 50px;
+            font-weight: lighter;
+        }
+
+        .locations img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .locations p {
+            color: white;
+        }
+
+        .locations table {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .locations td {
+            width: 50%;
+        }
+
+        .locations h1 {
+            color: white;
+            font-size: 50px;
+            margin-left: 70px;
+        }
+
+        .locations p {
+            margin-left: 60px;
+        }
+
+        .locations .nav-links {
+            padding-right: 0;
+        }
+
+        @media (max-width: 768px) {
+            .navbar td {
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <table>
+            <tr>
+                <td>
+                    <a href="index.html"><img src="logo.png" alt="MovieHouse"></a>
+                </td>
+                <td class="nav-links">
+                    <a href="whatson.html">What's On</a>
+                    <a href="booknow.html">Book Now</a>
+                    <a href="location.html">Locations</a>
+                    <a href="login.html">Log In\Sign Up</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+    <div class="locations">
+        <h1>WHERE TO FIND US</h1>
+        <img src="location.png" alt="Location Icon">
+        <p>NOVARE LEKKI MALL, SANGOTEDO, ETI-OSA, LAGOS</p>
+        <table>
+            <tr>
+                <td>
+                    <img src="location.png" alt="Location Icon">
+                    <p>GARDEN CITY MALL, RUMUOMASI, PORT HARCOURT</p>
+                </td>
+                <td>
+                    <img src="location.png" alt="Location Icon">
+                    <p>JABI LAKE MALL, BALA SOKOTO WAY, JABI, ABUJA</p>
+                </td>
+            </tr>
+        </table>
+        <h1>Contact Us</h1>
+        <p>You can email us at the address at helpdesk@moviehouse.com<br><br>Or you can call us at +234 905 678 2134.</p>
+    </div>
+</body>
 </html>
