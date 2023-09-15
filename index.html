@@ -1,87 +1,139 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>MovieHouse</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body style="background-color: #272424;">
-        <table>
-            <tr>
-                <td style="width: 100px; padding-right: 350px;">
-                    <a href="index.html"><img src="logo.png"></a>
-                </td>
-                <td >
-                    <a href="whatson.html" style="padding-right: 70px; font-size: 20px; text-decoration: none; color: white;">What's On</a>
-                    <a href="booknow.html" style="padding-right: 70px; font-size: 20px; text-decoration: none; color: white;">Book Now</a>
-                    <a href="location.html" style="padding-right: 70px; font-size: 20px; text-decoration: none; color: white;">Locations</a>
-                    <a href="login.html" style="padding-right: 70px; font-size: 20px; text-decoration: none; color: white;">Log In\Sign Up</a>
-                </td>
-            </tr>
-        </table>
-        <div>
-            <div class="container">
-                <img src="avatar-2.avif" style="width: 100%; height: 500px;">
-                <div class="text">
-                     <h1 style="font-size: 50px;">Avatar 2: The Way of Water<br></h1><p style="font-family: Georgia, 'Times New Roman', Times, serif;">Jake Sully and Ney'tiri have formed a family and are doing everything to stay together.<br>
-                     However, they must leave their home and explore the regions of Pandora. <br>
-                    When an ancient threat resurfaces, Jake must fight a difficult war against the humans.</p>
-        
-                </div>
+<head>
+    <title>MovieHouse</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background-color: #272424;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 50px;
+            background-color: #272424;
+        }
+
+        .navbar a {
+            padding-right: 70px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .header {
+            font-size: 50px;
+        }
+
+        .movie-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            margin: 20px;
+            color: white;
+        }
+
+        .movie-details img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+
+        .movie-info {
+            padding: 20px;
+        }
+
+        .movie-list {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            color: white;
+        }
+
+        .movie-list img {
+            width: 300px;
+            height: 400px;
+        }
+
+        .movie-list p {
+            font-size: 30px;
+            padding-left: 20px;
+        }
+
+        select {
+            height: 40px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="logo.png"></a>
+        <a href="whatson.html">What's On</a>
+        <a href="booknow.html">Book Now</a>
+        <a href="location.html">Locations</a>
+        <a href="login.html">Log In\Sign Up</a>
+    </div>
+    <div class="container">
+        <div class="movie-details">
+            <img src="avatar-2.avif" alt="Avatar 2">
+            <div class="movie-info">
+                <h1 class="header">Avatar 2: The Way of Water</h1>
+                <p>
+                    Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. 
+                    However, they must leave their home and explore the regions of Pandora. 
+                    When an ancient threat resurfaces, Jake must fight a difficult war against the humans.
+                </p>
             </div>
         </div>
-        <div>
-            <h1 style="padding-left: 50px; color: white;">CURRENTLY SHOWING</h1>
-            <br><br>
-            <h3 style="padding-left: 30px; color: white;">CHOOSE WHERE YOU WANT TO WATCH FROM</h3><br>
-            
-            <form>
-                <table>
-                    <tr>
-                        <td style="padding-right: 300px;">
-                            <select style="height: 40px; width: 150px">
-                                <option value="LAGOS">LAGOS</option>
-                                <option value="ABUJA">ABUJA</option>
-                                <option value="PORT HARCOURT">PORT HARCOURT</option>
-                            </select>
-                        </td>
-                        <td style="padding-right: 300px;">
-                            <select style="height: 40px; width: 150px">
-                                <option value="LEKKI">LEKKI</option>
-                                <option value="JABI">JABI</option>
-                                <option value="RUMUOMASI">RUMUOMASI</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select style="height: 40px; width: 150px">
-                                <option value="TODAY">TODAY</option>
-                                <option value="TOMORROW">TOMORROW</option>
-                               
-                            </select>
-                        </td>
-                    </tr>
-                </table>
-            
-            </form>
-            <br><br>
-        </div>
-        <div>
+        <h1>CURRENTLY SHOWING</h1>
+        <h3>CHOOSE WHERE YOU WANT TO WATCH FROM</h3>
+        <form>
             <table>
                 <tr>
-                    <td style="width: 500px;">
-                        <img src="ba.webp" style="height:400px; width: 300px"><br>
-                        <p style="font-size:30px; color: white; padding-left: 60px;">Black Adam</p>
-                    </td>
-                    <td style="width: 500px;">
-                        <img src="bp2.webp" style="height:400px; width: 300px"><br>
-                        <p style="font-size: 30px; color: white;padding-left: 60px;">Black Panther 2:<br>
-                             Wakanda Forever</p>
+                    <td>
+                        <select>
+                            <option value="LAGOS">LAGOS</option>
+                            <option value="ABUJA">ABUJA</option>
+                            <option value="PORT HARCOURT">PORT HARCOURT</option>
+                        </select>
                     </td>
                     <td>
-                        <img src="avatar3.jpg" style="height:400px; width: 300px"><br>
-                        <p style="font-size: 30px; color: white; padding-left: 60px;">Avatar 2: <br>The Way of Water</p>
+                        <select>
+                            <option value="LEKKI">LEKKI</option>
+                            <option value="JABI">JABI</option>
+                            <option value="RUMUOMASI">RUMUOMASI</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="TODAY">TODAY</option>
+                            <option value="TOMORROW">TOMORROW</option>
+                        </select>
                     </td>
                 </tr>
             </table>
+        </form>
+        <div class="movie-list">
+            <div>
+                <img src="ba.webp" alt="Black Adam">
+                <p>Black Adam</p>
+            </div>
+            <div>
+                <img src="bp2.webp" alt="Black Panther 2">
+                <p>Black Panther 2: Wakanda Forever</p>
+            </div>
+            <div>
+                <img src="avatar3.jpg" alt="Avatar 2">
+                <p>Avatar 2: The Way of Water</p>
+            </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
